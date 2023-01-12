@@ -1,14 +1,8 @@
-const assertEqual = function (actual, expected, result = false) {
-  if (actual === expected) {
-    if (!result) {
-      //console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-    }
-    return true;
+const assertEqual = function (actual, expected) {
+  if (actual !== expected) {
+    console.log(`🛑🛑🛑 Assertion Failed:${actual} !== ${expected}`);
   } else {
-    if (!result) {
-      //console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-    }
-    return false;
+    console.log(`✅✅✅ Assertion Passed:${actual} === ${expected}`);
   }
 };
 assertEqual("Lighthouse Labs", "Bootcamp");
