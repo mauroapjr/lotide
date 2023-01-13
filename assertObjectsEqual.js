@@ -11,6 +11,7 @@ const eqArrays = function (arr1, arr2) {
 };
 
 //////////////////////////////////////////////////////////////////////////
+
 const eqObjects = function (object1, object2) {
   let keys1 = Object.keys(object1);
   let keys2 = Object.keys(object2);
@@ -27,8 +28,6 @@ const eqObjects = function (object1, object2) {
 };
 
 /////////////////////////////////////////////////////////////////////////
-
-///////////////////////////////////////////////////////////////////////
 
 const assertObjectsEqual = function (actual, expected) {
   const inspect = require("util").inspect;
