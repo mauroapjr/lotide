@@ -24,7 +24,7 @@ var findKey = function (object, callback) {
     }
   }
 
-  return undefined;
+  //return undefined;
 };
 
 var found = findKey(findKeyIn, (item) => item.stars === 2);
