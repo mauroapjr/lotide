@@ -6,10 +6,14 @@ const assert = require("chai").assert;
 // assertEqual(words.length, 3);
 
 describe("#head", () => {
-  it("return true if the function it IS cutting the first element", () => {
-    assert.strictEqual(assertEqual(tail(["Yo Yo", "Lighthouse", "Labs"])));
+  const words = ["Yo Yo", "Lighthouse", "Labs"];
+  it("returns 3 for words.length", () => {
+    assert.strictEqual(words.length, 3);
   });
-  it("return false if the function it is NOT cutting the first element", () => {
-    assert.strictEqual(assertEqual(tail(["Yo Yo", "Lighthouse", "Labs"])));
+  it("returns 2 for tail(words).length", () => {
+    assert.strictEqual(tail(words).length, 2);
+  });
+  it("returns ['Lighthouse', 'Labs'] for tail(words)", () => {
+    assert.deepEqual(tail(words), ["Lighthouse", "Labs"]);
   });
 });
