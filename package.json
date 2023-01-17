@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@mauropereira/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Library of functions that compare elements in a array.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -19,7 +19,7 @@
     "type": "git",
     "url": "git+https://github.com/mauroapjr/lotide.git"
   },
-  "author": "",
+  "author": "Mauro Pereira",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mauroapjr/lotide/issues"
